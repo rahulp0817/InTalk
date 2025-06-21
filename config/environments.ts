@@ -1,4 +1,3 @@
-// src/config/environments.ts
 export type Environment = "development" | "production";
 
 export interface EnvironmentConfig {
