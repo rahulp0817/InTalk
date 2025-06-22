@@ -8,8 +8,7 @@ const HomeScreen = () => {
     const authContext = useContext(AuthContext);
     return (
         <SafeAreaView>
-            <Text>hello</Text>
-            <Button className="mt-6" onPress={() => {
+            <Button className="mt-6 mx-6" onPress={() => {
                 authContext.logOut();
             }}>
                 <Text className="text-base text-white">LogOut</Text>
