@@ -35,14 +35,14 @@ export function AuthProvider({ children }: PropsWithChildren) {
     };
 
     const logIn = () => {
+        router.replace("/")
         setIsLoggedIn(true);
         storeAuthState({ isLoggedIn: true });
-        router.replace("/")
     };
     const logOut = () => {
+        router.replace("/(auth)/sign-in")
         setIsLoggedIn(false);
         storeAuthState({ isLoggedIn: false });
-        router.replace("/(auth)/sign-in")
     };
 
     useEffect(() => {

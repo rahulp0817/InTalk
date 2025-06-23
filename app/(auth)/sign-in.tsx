@@ -5,6 +5,8 @@ import { Text, View } from "react-native";
 
 const SignIn = () => {
     const authContext = useContext(AuthContext);
+    console.log("signin");
+
     return (
         <View className="px-6">
             <Text className="text-2xl font-bold self-center mt-10">

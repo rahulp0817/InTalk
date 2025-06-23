@@ -6,6 +6,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const HomeScreen = () => {
     const authContext = useContext(AuthContext);
+    console.log("home page")
     return (
         <SafeAreaView>
             <Button className="mt-6 mx-6" onPress={() => {

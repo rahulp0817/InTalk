@@ -8,28 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		19BB074D647443D5806405D7 /* libPods-Intalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 349DDD1CE0AC5BF2BDBD19B2 /* libPods-Intalk.a */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		5544F572EFEDA23FBA1D37A9 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C168DAC66EF29D9BA2466 /* ExpoModulesProvider.swift */; };
-		8DBEA6E6AF61158DE936DC66 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = E54D18E8A532E5A749F9F0A6 /* PrivacyInfo.xcprivacy */; };
-		A90B66AF65327FCD7A6E3CEA /* libPods-chatapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E3D79EF0963EE78B3E3776 /* libPods-chatapp.a */; };
+		650D22563A9DDA0B085B2CEA /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = EE4F7EE96C680CC6189FE442 /* PrivacyInfo.xcprivacy */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		E47B378274A9A1463B5ECBA8 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F217CDF4172E683E7F66790 /* ExpoModulesProvider.swift */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13B07F961A680F5B00A75B9A /* chatapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = chatapp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = chatapp/Info.plist; sourceTree = "<group>"; };
-		9F6C168DAC66EF29D9BA2466 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-chatapp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = chatapp/SplashScreen.storyboard; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Intalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Intalk/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Intalk/Info.plist; sourceTree = "<group>"; };
+		349DDD1CE0AC5BF2BDBD19B2 /* libPods-Intalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Intalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59F8344703FC00967EEB378A /* Pods-Intalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intalk.release.xcconfig"; path = "Target Support Files/Pods-Intalk/Pods-Intalk.release.xcconfig"; sourceTree = "<group>"; };
+		6F217CDF4172E683E7F66790 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Intalk/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = Intalk/SplashScreen.storyboard; sourceTree = "<group>"; };
+		AD04453E79BE43AB9C2E407B /* Pods-Intalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intalk.debug.xcconfig"; path = "Target Support Files/Pods-Intalk/Pods-Intalk.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		CECC20124D457D94A64BA039 /* Pods-chatapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatapp.debug.xcconfig"; path = "Target Support Files/Pods-chatapp/Pods-chatapp.debug.xcconfig"; sourceTree = "<group>"; };
-		D6E3D79EF0963EE78B3E3776 /* libPods-chatapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-chatapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E09CC342E0E462C7E4381824 /* Pods-chatapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatapp.release.xcconfig"; path = "Target Support Files/Pods-chatapp/Pods-chatapp.release.xcconfig"; sourceTree = "<group>"; };
-		E54D18E8A532E5A749F9F0A6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = chatapp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = chatapp/AppDelegate.swift; sourceTree = "<group>"; };
-		F11748442D0722820044C1D9 /* chatapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "chatapp-Bridging-Header.h"; path = "chatapp/chatapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE4F7EE96C680CC6189FE442 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Intalk/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Intalk/AppDelegate.swift; sourceTree = "<group>"; };
+		F11748442D0722820044C1D9 /* Intalk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Intalk-Bridging-Header.h"; path = "Intalk/Intalk-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,32 +37,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A90B66AF65327FCD7A6E3CEA /* libPods-chatapp.a in Frameworks */,
+				19BB074D647443D5806405D7 /* libPods-Intalk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13B07FAE1A68108700A75B9A /* chatapp */ = {
+		06C53A298A7F3BBC0E4556BF /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				EC282DB670A7B27632E86B65 /* Intalk */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* Intalk */ = {
 			isa = PBXGroup;
 			children = (
 				F11748412D0307B40044C1D9 /* AppDelegate.swift */,
-				F11748442D0722820044C1D9 /* chatapp-Bridging-Header.h */,
+				F11748442D0722820044C1D9 /* Intalk-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				E54D18E8A532E5A749F9F0A6 /* PrivacyInfo.xcprivacy */,
+				EE4F7EE96C680CC6189FE442 /* PrivacyInfo.xcprivacy */,
 			);
-			name = chatapp;
+			name = Intalk;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				D6E3D79EF0963EE78B3E3776 /* libPods-chatapp.a */,
+				349DDD1CE0AC5BF2BDBD19B2 /* libPods-Intalk.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,12 +85,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* chatapp */,
+				13B07FAE1A68108700A75B9A /* Intalk */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				8C3000F19F9517D45AE6781F /* Pods */,
-				EA30E90DBFBE899A8E6A1E4E /* ExpoModulesProviders */,
+				CE3668398FCF4EC5D97E4D23 /* Pods */,
+				06C53A298A7F3BBC0E4556BF /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -92,27 +100,9 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* chatapp.app */,
+				13B07F961A680F5B00A75B9A /* Intalk.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8C3000F19F9517D45AE6781F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CECC20124D457D94A64BA039 /* Pods-chatapp.debug.xcconfig */,
-				E09CC342E0E462C7E4381824 /* Pods-chatapp.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		A38FCAFF7265B9A2F26BE4D4 /* chatapp */ = {
-			isa = PBXGroup;
-			children = (
-				9F6C168DAC66EF29D9BA2466 /* ExpoModulesProvider.swift */,
-			);
-			name = chatapp;
 			sourceTree = "<group>";
 		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
@@ -121,40 +111,50 @@
 				BB2F792C24A3F905000567C9 /* Expo.plist */,
 			);
 			name = Supporting;
-			path = chatapp/Supporting;
+			path = Intalk/Supporting;
 			sourceTree = "<group>";
 		};
-		EA30E90DBFBE899A8E6A1E4E /* ExpoModulesProviders */ = {
+		CE3668398FCF4EC5D97E4D23 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A38FCAFF7265B9A2F26BE4D4 /* chatapp */,
+				AD04453E79BE43AB9C2E407B /* Pods-Intalk.debug.xcconfig */,
+				59F8344703FC00967EEB378A /* Pods-Intalk.release.xcconfig */,
 			);
-			name = ExpoModulesProviders;
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC282DB670A7B27632E86B65 /* Intalk */ = {
+			isa = PBXGroup;
+			children = (
+				6F217CDF4172E683E7F66790 /* ExpoModulesProvider.swift */,
+			);
+			name = Intalk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* chatapp */ = {
+		13B07F861A680F5B00A75B9A /* Intalk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "chatapp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Intalk" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				F350BDEB9D38AA71E7600C70 /* [Expo] Configure project */,
+				FDAE7899D7254BCCE9B9115A /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				0CFCDC281B5AAED3AC4902C1 /* [CP] Embed Pods Frameworks */,
+				46D9AA3385AD89C6359EA34C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = chatapp;
-			productName = chatapp;
-			productReference = 13B07F961A680F5B00A75B9A /* chatapp.app */;
+			name = Intalk;
+			productName = Intalk;
+			productReference = 13B07F961A680F5B00A75B9A /* Intalk.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "chatapp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Intalk" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -183,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* chatapp */,
+				13B07F861A680F5B00A75B9A /* Intalk */,
 			);
 		};
 /* End PBXProject section */
@@ -196,7 +196,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				8DBEA6E6AF61158DE936DC66 /* PrivacyInfo.xcprivacy in Resources */,
+				650D22563A9DDA0B085B2CEA /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,20 +233,20 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-chatapp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Intalk-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0CFCDC281B5AAED3AC4902C1 /* [CP] Embed Pods Frameworks */ = {
+		46D9AA3385AD89C6359EA34C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-chatapp/Pods-chatapp-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Intalk/Pods-Intalk-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -255,7 +255,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chatapp/Pods-chatapp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Intalk/Pods-Intalk-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
@@ -264,7 +264,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-chatapp/Pods-chatapp-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Intalk/Pods-Intalk-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXApplication/ExpoApplication_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
@@ -301,10 +301,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chatapp/Pods-chatapp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Intalk/Pods-Intalk-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F350BDEB9D38AA71E7600C70 /* [Expo] Configure project */ = {
+		FDAE7899D7254BCCE9B9115A /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -321,7 +321,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-chatapp/expo-configure-project.sh\"\n";
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-Intalk/expo-configure-project.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -331,7 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				5544F572EFEDA23FBA1D37A9 /* ExpoModulesProvider.swift in Sources */,
+				E47B378274A9A1463B5ECBA8 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,18 +340,18 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CECC20124D457D94A64BA039 /* Pods-chatapp.debug.xcconfig */;
+			baseConfigurationReference = AD04453E79BE43AB9C2E407B /* Pods-Intalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = chatapp/chatapp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Intalk/Intalk.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				INFOPLIST_FILE = chatapp/Info.plist;
+				INFOPLIST_FILE = Intalk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -364,9 +364,9 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.anonymous.chat-app";
-				PRODUCT_NAME = chatapp;
-				SWIFT_OBJC_BRIDGING_HEADER = "chatapp/chatapp-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anonymous.intalk;
+				PRODUCT_NAME = Intalk;
+				SWIFT_OBJC_BRIDGING_HEADER = "Intalk/Intalk-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -376,13 +376,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E09CC342E0E462C7E4381824 /* Pods-chatapp.release.xcconfig */;
+			baseConfigurationReference = 59F8344703FC00967EEB378A /* Pods-Intalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = chatapp/chatapp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Intalk/Intalk.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = chatapp/Info.plist;
+				INFOPLIST_FILE = Intalk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -395,9 +395,9 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.anonymous.chat-app";
-				PRODUCT_NAME = chatapp;
-				SWIFT_OBJC_BRIDGING_HEADER = "chatapp/chatapp-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anonymous.intalk;
+				PRODUCT_NAME = Intalk;
+				SWIFT_OBJC_BRIDGING_HEADER = "Intalk/Intalk-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -531,7 +531,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "chatapp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Intalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -540,7 +540,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "chatapp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Intalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
