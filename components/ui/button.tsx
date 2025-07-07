@@ -1,27 +1,31 @@
 import { cn } from '@/lib/utils';
 import { cva, type VariantProps } from 'class-variance-authority';
+import * as Haptics from 'expo-haptics';
 import * as React from 'react';
 import { Pressable } from 'react-native';
 import { TextClassContext } from './text';
 
 const buttonVariants = cva(
-  'group flex items-center justify-center rounded-md web:ring-offset-background web:transition-colors web:focus-visible:outline-none web:focus-visible:ring-2 web:focus-visible:ring-ring web:focus-visible:ring-offset-2',
+  'group flex items-center justify-center rounded-full web:ring-offset-background web:transition-colors web:focus-visible:outline-none web:focus-visible:ring-2 web:focus-visible:ring-ring web:focus-visible:ring-offset-2',
   {
     variants: {
       variant: {
         default: 'bg-primary web:hover:opacity-90 active:opacity-90',
         destructive: 'bg-destructive web:hover:opacity-90 active:opacity-90',
         outline:
-          'border border-input bg-background web:hover:bg-accent web:hover:text-accent-foreground active:bg-accent',
-        secondary: 'bg-secondary web:hover:opacity-80 active:opacity-80',
-        ghost: 'web:hover:bg-accent web:hover:text-accent-foreground active:bg-accent',
-        link: 'web:underline-offset-4 web:hover:underline web:focus:underline ',
+          'border-2 border-box border-primary bg-transparent text-primary web:hover:bg-accent web:hover:text-accent-foreground active:border-none',
+        secondary:
+          'bg-secondary web:hover:opacity-80 active:opacity-80 border-2 border-blue-500',
+        ghost:
+          'web:hover:bg-accent web:hover:text-accent-foreground active:bg-accent',
+        link: 'web:underline-offset-4 web:hover:underline web:focus:underline',
       },
       size: {
         default: 'h-10 px-4 py-2 native:h-12 native:px-5 native:py-3',
-        sm: 'h-9 rounded-md px-3',
-        lg: 'h-11 rounded-md px-8 native:h-14',
+        sm: 'h-9 rounded-full px-3',
+        lg: 'rounded-full px-8 native:py-4',
         icon: 'h-10 w-10',
+        compact: 'px-2 py-2 rounded-full text-center',
       },
     },
     defaultVariants: {
@@ -38,8 +42,9 @@ const buttonTextVariants = cva(
       variant: {
         default: 'text-primary-foreground',
         destructive: 'text-destructive-foreground',
-        outline: 'group-active:text-accent-foreground',
-        secondary: 'text-secondary-foreground group-active:text-secondary-foreground',
+        outline: 'text-base',
+        secondary:
+          'text-secondary-foreground group-active:text-secondary-foreground',
         ghost: 'group-active:text-accent-foreground',
         link: 'text-primary group-active:underline',
       },
@@ -48,6 +53,7 @@ const buttonTextVariants = cva(
         sm: '',
         lg: 'native:text-lg',
         icon: '',
+        compact: 'text-center',
       },
     },
     defaultVariants: {
@@ -61,10 +67,27 @@ type ButtonProps = React.ComponentPropsWithoutRef<typeof Pressable> &
   VariantProps<typeof buttonVariants>;
 
 const Button = React.forwardRef<React.ElementRef<typeof Pressable>, ButtonProps>(
-  ({ className, variant, size, ...props }, ref) => {
+  ({ className, variant, size, onPress, ...props }, ref) => {
+    const handlePress = React.useCallback(
+      (event: any) => {
+        // Trigger light haptic feedback
+        Haptics.selectionAsync();
+
+        // Call the original onPress if provided
+        if (onPress) {
+          onPress(event);
+        }
+      },
+      [onPress]
+    );
+
     return (
       <TextClassContext.Provider
-        value={buttonTextVariants({ variant, size, className: 'web:pointer-events-none' })}
+        value={buttonTextVariants({
+          variant,
+          size,
+          className: 'web:pointer-events-none',
+        })}
       >
         <Pressable
           className={cn(
@@ -72,13 +95,15 @@ const Button = React.forwardRef<React.ElementRef<typeof Pressable>, ButtonProps>
             buttonVariants({ variant, size, className })
           )}
           ref={ref}
-          role='button'
+          role="button"
+          onPress={handlePress}
           {...props}
         />
       </TextClassContext.Provider>
     );
   }
 );
+
 Button.displayName = 'Button';
 
 export { Button, buttonTextVariants, buttonVariants };

@@ -2,30 +2,22 @@ import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 
-const AuthLayout = () => {
+const OnboardingLayout = () => {
   return (
     <>
       <Stack>
         <Stack.Screen
-          name="auth-screen"
+          name="onboarding-screen"
           options={{
-            headerShown: false,
-            animation: 'none'
+            headerShown: true,
           }}
         />
         <Stack.Screen
-          name="sign-in"
-          options={{
-            headerShown: false,
-            animation: 'none'
-          }}
-        />
-        <Stack.Screen
-          name="sign-up"
+          name="final-screen"
           options={{
             presentation: 'fullScreenModal',    
             animation: 'slide_from_bottom',
-            headerShown: false,
+            headerShown: true,
           }}
         />
       </Stack>
@@ -34,4 +26,4 @@ const AuthLayout = () => {
   );
 };
 
-export default AuthLayout;
+export default OnboardingLayout;

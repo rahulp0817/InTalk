@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		19BB074D647443D5806405D7 /* libPods-Intalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 349DDD1CE0AC5BF2BDBD19B2 /* libPods-Intalk.a */; };
+		2111C458A62F6E4188EEDC4E /* libPods-Intalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3B3F4053AF2BCE55326A37 /* libPods-Intalk.a */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		650D22563A9DDA0B085B2CEA /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = EE4F7EE96C680CC6189FE442 /* PrivacyInfo.xcprivacy */; };
+		5F6AF8ACBFE151E20624F2BB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 93D1268FF46FDC4880E35992 /* PrivacyInfo.xcprivacy */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		E47B378274A9A1463B5ECBA8 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F217CDF4172E683E7F66790 /* ExpoModulesProvider.swift */; };
+		DCF80FCAB8C08216A421D3C1 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1222F595D14C6275164681 /* ExpoModulesProvider.swift */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,16 +20,16 @@
 		13B07F961A680F5B00A75B9A /* Intalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Intalk/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Intalk/Info.plist; sourceTree = "<group>"; };
-		349DDD1CE0AC5BF2BDBD19B2 /* libPods-Intalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Intalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59F8344703FC00967EEB378A /* Pods-Intalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intalk.release.xcconfig"; path = "Target Support Files/Pods-Intalk/Pods-Intalk.release.xcconfig"; sourceTree = "<group>"; };
-		6F217CDF4172E683E7F66790 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Intalk/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		2D19FE104366DC990892454A /* Pods-Intalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intalk.debug.xcconfig"; path = "Target Support Files/Pods-Intalk/Pods-Intalk.debug.xcconfig"; sourceTree = "<group>"; };
+		3C3B3F4053AF2BCE55326A37 /* libPods-Intalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Intalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1222F595D14C6275164681 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Intalk/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		93D1268FF46FDC4880E35992 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Intalk/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = Intalk/SplashScreen.storyboard; sourceTree = "<group>"; };
-		AD04453E79BE43AB9C2E407B /* Pods-Intalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intalk.debug.xcconfig"; path = "Target Support Files/Pods-Intalk/Pods-Intalk.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		EE4F7EE96C680CC6189FE442 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Intalk/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Intalk/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* Intalk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Intalk-Bridging-Header.h"; path = "Intalk/Intalk-Bridging-Header.h"; sourceTree = "<group>"; };
+		FDCF309FFC44059E0F1641CC /* Pods-Intalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intalk.release.xcconfig"; path = "Target Support Files/Pods-Intalk/Pods-Intalk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,21 +37,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BB074D647443D5806405D7 /* libPods-Intalk.a in Frameworks */,
+				2111C458A62F6E4188EEDC4E /* libPods-Intalk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06C53A298A7F3BBC0E4556BF /* ExpoModulesProviders */ = {
-			isa = PBXGroup;
-			children = (
-				EC282DB670A7B27632E86B65 /* Intalk */,
-			);
-			name = ExpoModulesProviders;
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* Intalk */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,18 +53,44 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				EE4F7EE96C680CC6189FE442 /* PrivacyInfo.xcprivacy */,
+				93D1268FF46FDC4880E35992 /* PrivacyInfo.xcprivacy */,
 			);
 			name = Intalk;
+			sourceTree = "<group>";
+		};
+		28E54E890D2CA406495F8D2A /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				487AE82FAE18F9EF7C3051F7 /* Intalk */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				349DDD1CE0AC5BF2BDBD19B2 /* libPods-Intalk.a */,
+				3C3B3F4053AF2BCE55326A37 /* libPods-Intalk.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		487AE82FAE18F9EF7C3051F7 /* Intalk */ = {
+			isa = PBXGroup;
+			children = (
+				6A1222F595D14C6275164681 /* ExpoModulesProvider.swift */,
+			);
+			name = Intalk;
+			sourceTree = "<group>";
+		};
+		4EB343346D21F894B0C201D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D19FE104366DC990892454A /* Pods-Intalk.debug.xcconfig */,
+				FDCF309FFC44059E0F1641CC /* Pods-Intalk.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -89,8 +107,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				CE3668398FCF4EC5D97E4D23 /* Pods */,
-				06C53A298A7F3BBC0E4556BF /* ExpoModulesProviders */,
+				4EB343346D21F894B0C201D9 /* Pods */,
+				28E54E890D2CA406495F8D2A /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -114,24 +132,6 @@
 			path = Intalk/Supporting;
 			sourceTree = "<group>";
 		};
-		CE3668398FCF4EC5D97E4D23 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AD04453E79BE43AB9C2E407B /* Pods-Intalk.debug.xcconfig */,
-				59F8344703FC00967EEB378A /* Pods-Intalk.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		EC282DB670A7B27632E86B65 /* Intalk */ = {
-			isa = PBXGroup;
-			children = (
-				6F217CDF4172E683E7F66790 /* ExpoModulesProvider.swift */,
-			);
-			name = Intalk;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,13 +140,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Intalk" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				FDAE7899D7254BCCE9B9115A /* [Expo] Configure project */,
+				A13075B7C39B1D5EE27111B1 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				46D9AA3385AD89C6359EA34C /* [CP] Embed Pods Frameworks */,
+				60B5CC9345DA4C8CF60D1E8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,7 +196,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				650D22563A9DDA0B085B2CEA /* PrivacyInfo.xcprivacy in Resources */,
+				5F6AF8ACBFE151E20624F2BB /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +240,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		46D9AA3385AD89C6359EA34C /* [CP] Embed Pods Frameworks */ = {
+		60B5CC9345DA4C8CF60D1E8F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,7 +304,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Intalk/Pods-Intalk-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FDAE7899D7254BCCE9B9115A /* [Expo] Configure project */ = {
+		A13075B7C39B1D5EE27111B1 /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -331,7 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				E47B378274A9A1463B5ECBA8 /* ExpoModulesProvider.swift in Sources */,
+				DCF80FCAB8C08216A421D3C1 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +340,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD04453E79BE43AB9C2E407B /* Pods-Intalk.debug.xcconfig */;
+			baseConfigurationReference = 2D19FE104366DC990892454A /* Pods-Intalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -376,7 +376,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59F8344703FC00967EEB378A /* Pods-Intalk.release.xcconfig */;
+			baseConfigurationReference = FDCF309FFC44059E0F1641CC /* Pods-Intalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

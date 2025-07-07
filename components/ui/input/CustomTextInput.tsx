@@ -55,21 +55,17 @@ export const CustomTextInput = forwardRef<TextInput, CustomTextInputProps>(
 
         const [isFocused, setIsFocused] = useState(false);
         const [isPasswordVisible, setIsPasswordVisible] = useState(false);
-
-        // 0 → unfocused, 1 → focused (will animate between)
         const focusAnim = useRef(new Animated.Value(0)).current;
 
         useEffect(() => {
-            // Skip animation if we are showing a red error border
             if (error) return;
 
             Animated.timing(focusAnim, {
                 toValue: isFocused ? 1 : 0,
                 duration: 200,
-                useNativeDriver: false, // animating borderColor
+                useNativeDriver: false,
             }).start();
         }, [isFocused, error, focusAnim]);
-
 
         const togglePasswordVisibility = () => {
             setIsPasswordVisible(prev => !prev);
@@ -101,18 +97,27 @@ export const CustomTextInput = forwardRef<TextInput, CustomTextInputProps>(
 
         const baseBorder: any =
             variant === 'underline'
-                ? { borderBottomWidth: 2, borderRadius: 0 }
+                ? { borderBottomWidth: 1, borderRadius: 0 }
                 : variant === 'none'
                     ? {}
-                    : { borderWidth: variant === 'outlined' ? 2 : 1, borderRadius: 8 };
-
+                    : { borderRadius: 8 };
 
         const animatedBorderColor = error
-            ? '#EF4444' // red if error
+            ? '#EF4444'
             : focusAnim.interpolate({
                 inputRange: [0, 1],
-                outputRange: ['#D1D5DB', '#3B82F6'], // gray → blue
+                outputRange: ['#D1D5DB', '#3B82F6'],
             });
+
+        const animatedBorderWidth =
+            variant === 'underline' || variant === 'none'
+                ? undefined
+                : error
+                    ? 2
+                    : focusAnim.interpolate({
+                        inputRange: [0, 1],
+                        outputRange: [1, 2],
+                    });
 
         return (
             <View className={clsx('w-full', containerClassName)}>
@@ -133,14 +138,16 @@ export const CustomTextInput = forwardRef<TextInput, CustomTextInputProps>(
                     style={[
                         styles.inputWrapper,
                         baseBorder,
-                        { borderColor: animatedBorderColor },
+                        {
+                            borderColor: animatedBorderColor,
+                            borderWidth: animatedBorderWidth,
+                        },
                     ]}
                     className={clsx(
-                        'flex flex-row items-center px-3 h-12 w-full transition-all',
+                        'flex flex-row items-center px-3 h-14 w-full transition-all',
                         inputClassName,
                     )}
                 >
-                    {/* Optional search prefix icon */}
                     {type === 'search' && (
                         <Ionicons
                             name="search"
@@ -150,10 +157,8 @@ export const CustomTextInput = forwardRef<TextInput, CustomTextInputProps>(
                         />
                     )}
 
-                    {/* Optional custom prefix icon */}
                     {startIcon && <View style={styles.iconSpacing}>{startIcon}</View>}
 
-                    {/* Actual TextInput */}
                     <TextInput
                         {...props}
                         ref={ref}
@@ -170,7 +175,6 @@ export const CustomTextInput = forwardRef<TextInput, CustomTextInputProps>(
                         style={[styles.textInput, props.style]}
                     />
 
-                    {/* Suffix icon(s) */}
                     {renderEndIcon() && (
                         <View style={styles.iconSpacing}>{renderEndIcon()}</View>
                     )}

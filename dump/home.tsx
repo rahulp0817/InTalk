@@ -6,7 +6,6 @@ import { Image } from 'expo-image';
 import { Platform, StyleSheet } from 'react-native';
 
 export default function HomeScreen() {
-  console.log("index page");
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}

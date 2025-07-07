@@ -1,26 +1,24 @@
 import { Button } from "@/components/ui/button";
-import { AuthContext } from "@/context/AuthContext";
-import { useContext } from "react";
-import { Text, View } from "react-native";
+import { Text } from "@/components/ui/text";
+import { useAuthStore } from "@/store/AuthStore";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const SignIn = () => {
-    const authContext = useContext(AuthContext);
+    const { logIn } = useAuthStore();
     console.log("signin");
 
     return (
-        <View className="px-6">
+        <SafeAreaView className="px-6">
             <Text className="text-2xl font-bold self-center mt-10">
                 Sign In
             </Text>
             <Text className="text-lg text-center mt-4">
-                {authContext.isLoggedIn ? "You are logged in!" : "Please log in to continue."}
+                Please log in to continue.
             </Text>
-            <Button className="mt-6" onPress={() => {
-                authContext.logIn();
-            }}>
+            <Button className="mt-6 rounded-full py-2" variant="default" size={"lg"} onPress={logIn}>
                 <Text className="text-base text-white">Sign In</Text>
             </Button>
-        </View>
+        </SafeAreaView>
     )
 }
 

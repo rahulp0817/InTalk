@@ -1,14 +1,18 @@
+import { useColorScheme } from '@/hooks/useColorScheme';
+import { useAuthStore } from '@/store/AuthStore';
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
+import { SplashScreen, Stack } from 'expo-router';
+import React from 'react';
 import 'react-native-reanimated';
 import "../global.css";
 
-import { AuthProvider } from '@/context/AuthContext';
-import { useColorScheme } from '@/hooks/useColorScheme';
+
+SplashScreen.hideAsync();
+
 
 export default function RootLayout() {
+    const { isLoggedIn, hasCompletedOnboarding } = useAuthStore();
     const colorScheme = useColorScheme();
     const [loaded] = useFonts({
         SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
@@ -19,15 +23,22 @@ export default function RootLayout() {
     }
 
     return (
-        <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-            <AuthProvider>
+        <React.Fragment>
+           {/* <StatusBar style="light" backgroundColor="#121212" /> */}
+            <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
                 <Stack>
-                    <Stack.Screen name="(protected)" options={{ headerShown: false, animation: "none" }} />
-                    <Stack.Screen name="(auth)" options={{ headerShown: false, animation: "none" }} />
-                    <Stack.Screen name="+not-found" />
+                    <Stack.Protected guard={isLoggedIn}>
+                        <Stack.Screen name="(tabs)" options={{ headerShown: false, animation: "none" }} />
+                        <Stack.Screen name="+not-found" />
+                    </Stack.Protected>
+                    <Stack.Protected guard={!isLoggedIn && hasCompletedOnboarding}>
+                        <Stack.Screen name="(auth)" options={{ headerShown: false, animation: "none" }} />
+                    </Stack.Protected>
+                    <Stack.Protected guard={!hasCompletedOnboarding}>
+                        <Stack.Screen name="(onboarding)" options={{ headerShown: false, animation: "none" }} />
+                    </Stack.Protected>
                 </Stack>
-                <StatusBar style="auto" />
-            </AuthProvider>
-        </ThemeProvider>
+            </ThemeProvider>
+        </React.Fragment>
     );
 }
